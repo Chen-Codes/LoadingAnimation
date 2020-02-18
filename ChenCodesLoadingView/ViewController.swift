@@ -6,15 +6,16 @@
 //  Copyright © 2020 Chen Codes. All rights reserved.
 //
 
+import AnchorKit
 import UIKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let loadingView = LoadingView()
+        view.addSubview(loadingView)
+        loadingView.constrainCenter(to: view)
     }
-
-
 }
-

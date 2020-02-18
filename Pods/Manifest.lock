@@ -1,0 +1,16 @@
+PODS:
+  - AnchorKit (2.3.0)
+
+DEPENDENCIES:
+  - AnchorKit (~> 2)
+
+SPEC REPOS:
+  trunk:
+    - AnchorKit
+
+SPEC CHECKSUMS:
+  AnchorKit: 7a7afa0455711cb65120a2120c417bb2fb268c09
+
+PODFILE CHECKSUM: f62aaa6b26ca6307da508fa62c2a5f16d6ba2869
+
+COCOAPODS: 1.8.4

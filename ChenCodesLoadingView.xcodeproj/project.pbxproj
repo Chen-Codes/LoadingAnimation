@@ -3,19 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA1D9B1A23EA5B9E00EE0820 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1D9B1923EA5B9E00EE0820 /* LoadingView.swift */; };
 		BA3B09E523EA5A3A006EA95D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3B09E423EA5A3A006EA95D /* AppDelegate.swift */; };
 		BA3B09E723EA5A3A006EA95D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3B09E623EA5A3A006EA95D /* SceneDelegate.swift */; };
 		BA3B09E923EA5A3A006EA95D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3B09E823EA5A3A006EA95D /* ViewController.swift */; };
 		BA3B09EC23EA5A3A006EA95D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA3B09EA23EA5A3A006EA95D /* Main.storyboard */; };
 		BA3B09EE23EA5A3A006EA95D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA3B09ED23EA5A3A006EA95D /* Assets.xcassets */; };
 		BA3B09F123EA5A3A006EA95D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA3B09EF23EA5A3A006EA95D /* LaunchScreen.storyboard */; };
+		F87C116B56EBEBEA4FCA1AA2 /* Pods_ChenCodesLoadingView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BA27EC4DAA74F7F2DD19137 /* Pods_ChenCodesLoadingView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3298815C8B689F612EE6B84D /* Pods-ChenCodesLoadingView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChenCodesLoadingView.release.xcconfig"; path = "Target Support Files/Pods-ChenCodesLoadingView/Pods-ChenCodesLoadingView.release.xcconfig"; sourceTree = "<group>"; };
+		7BA27EC4DAA74F7F2DD19137 /* Pods_ChenCodesLoadingView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChenCodesLoadingView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA1D9B1923EA5B9E00EE0820 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		BA3B09E123EA5A3A006EA95D /* ChenCodesLoadingView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChenCodesLoadingView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA3B09E423EA5A3A006EA95D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA3B09E623EA5A3A006EA95D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		BA3B09ED23EA5A3A006EA95D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA3B09F023EA5A3A006EA95D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA3B09F223EA5A3A006EA95D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC910EACFADBA8C4200A76AD /* Pods-ChenCodesLoadingView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChenCodesLoadingView.debug.xcconfig"; path = "Target Support Files/Pods-ChenCodesLoadingView/Pods-ChenCodesLoadingView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F87C116B56EBEBEA4FCA1AA2 /* Pods_ChenCodesLoadingView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE7FD69A470528FC53E7C179 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC910EACFADBA8C4200A76AD /* Pods-ChenCodesLoadingView.debug.xcconfig */,
+				3298815C8B689F612EE6B84D /* Pods-ChenCodesLoadingView.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BA3B09D823EA5A3A006EA95D = {
 			isa = PBXGroup;
 			children = (
 				BA3B09E323EA5A3A006EA95D /* ChenCodesLoadingView */,
 				BA3B09E223EA5A3A006EA95D /* Products */,
+				AE7FD69A470528FC53E7C179 /* Pods */,
+				E025C63F9543722CD22BC4F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +77,21 @@
 				BA3B09E423EA5A3A006EA95D /* AppDelegate.swift */,
 				BA3B09E623EA5A3A006EA95D /* SceneDelegate.swift */,
 				BA3B09E823EA5A3A006EA95D /* ViewController.swift */,
+				BA1D9B1923EA5B9E00EE0820 /* LoadingView.swift */,
 				BA3B09EA23EA5A3A006EA95D /* Main.storyboard */,
 				BA3B09ED23EA5A3A006EA95D /* Assets.xcassets */,
 				BA3B09EF23EA5A3A006EA95D /* LaunchScreen.storyboard */,
 				BA3B09F223EA5A3A006EA95D /* Info.plist */,
 			);
 			path = ChenCodesLoadingView;
+			sourceTree = "<group>";
+		};
+		E025C63F9543722CD22BC4F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BA27EC4DAA74F7F2DD19137 /* Pods_ChenCodesLoadingView.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA3B09F523EA5A3A006EA95D /* Build configuration list for PBXNativeTarget "ChenCodesLoadingView" */;
 			buildPhases = (
+				F7EBE89F2EAB2637EFD7C5E3 /* [CP] Check Pods Manifest.lock */,
 				BA3B09DD23EA5A3A006EA95D /* Sources */,
 				BA3B09DE23EA5A3A006EA95D /* Frameworks */,
 				BA3B09DF23EA5A3A006EA95D /* Resources */,
+				76B5B80A4C0266D4C8AB7D52 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +162,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		76B5B80A4C0266D4C8AB7D52 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChenCodesLoadingView/Pods-ChenCodesLoadingView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChenCodesLoadingView/Pods-ChenCodesLoadingView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChenCodesLoadingView/Pods-ChenCodesLoadingView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7EBE89F2EAB2637EFD7C5E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChenCodesLoadingView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BA3B09DD23EA5A3A006EA95D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BA3B09E923EA5A3A006EA95D /* ViewController.swift in Sources */,
+				BA1D9B1A23EA5B9E00EE0820 /* LoadingView.swift in Sources */,
 				BA3B09E523EA5A3A006EA95D /* AppDelegate.swift in Sources */,
 				BA3B09E723EA5A3A006EA95D /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +354,7 @@
 		};
 		BA3B09F623EA5A3A006EA95D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC910EACFADBA8C4200A76AD /* Pods-ChenCodesLoadingView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +372,7 @@
 		};
 		BA3B09F723EA5A3A006EA95D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3298815C8B689F612EE6B84D /* Pods-ChenCodesLoadingView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
